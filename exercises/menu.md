@@ -1,12 +1,10 @@
 # Menu
 
-## Arrays
-
 - arrays, .first, .last, <<
 - map/collect
 - sort_by
 - join
-- class syntax, constructors
+- class syntax, constructors, attr_accessor
 
 ```
 Hamburger.....$5.00
