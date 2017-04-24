@@ -1,5 +1,6 @@
 # Menu
 
+- puts, #{}
 - arrays, .first, .last, <<
 - map/collect
 - sort_by
