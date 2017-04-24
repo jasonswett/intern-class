@@ -2,10 +2,7 @@
 
 ## Arrays
 
-```
-> a = ["yankee", "hotel", "foxtrot"]
-```
-
+- arrays, .first, .last
 - map/collect
 - class syntax, constructors
 
