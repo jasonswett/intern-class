@@ -1,6 +1,6 @@
 # Menu
 
-- puts, #{}
+- puts, #{}, lpad
 - arrays, .first, .last, <<
 - map/collect
 - sort_by
