@@ -5,6 +5,7 @@
 - arrays, .first, .last, <<
 - map/collect
 - sort_by
+- join
 - class syntax, constructors
 
 ```
