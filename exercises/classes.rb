@@ -5,6 +5,10 @@ class MenuItem
     @name = name
     @price = price
   end
+
+  def formatted_price
+    '%.2f' % price
+  end
 end
 
 class Menu
@@ -13,9 +17,18 @@ class Menu
     @menu_items << MenuItem.new(name, price)
   end
 
+  def menu_item_names
+    @menu_items.collect(&:name).sort_by(&:length)
+  end
+
+  def longest_menu_item_name
+    menu_item_names.last
+  end
+
   def to_s
-    @menu_items.map do |menu_item|
-      "#{menu_item.name} #{menu_item.price}"
+    @menu_items.collect do |menu_item|
+      name = menu_item.name.ljust(longest_menu_item_name.length, '.')
+      "#{name}..$#{menu_item.formatted_price}"
     end.join("\n")
   end
 end
