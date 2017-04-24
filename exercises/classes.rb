@@ -5,9 +5,24 @@ class MenuItem
     @name = name
     @price = price
   end
+end
+
+class MenuItemDisplay
+  def initialize(menu_item, length_of_longest_menu_item_name)
+    @menu_item = menu_item
+    @length_of_longest_menu_item_name = length_of_longest_menu_item_name
+  end
+
+  def name_with_dots
+    @menu_item.name.ljust(@length_of_longest_menu_item_name, '.')
+  end
 
   def formatted_price
-    '%.2f' % price
+    '%.2f' % @menu_item.price
+  end
+
+  def to_s
+    "#{name_with_dots}..$#{formatted_price}"
   end
 end
 
@@ -27,8 +42,7 @@ class Menu
 
   def to_s
     @menu_items.collect do |menu_item|
-      name = menu_item.name.ljust(longest_menu_item_name.length, '.')
-      "#{name}..$#{menu_item.formatted_price}"
+      MenuItemDisplay.new(menu_item, longest_menu_item_name.length).to_s
     end.join("\n")
   end
 end
