@@ -1,6 +1,11 @@
 # Menu
 
-- arrays, .first/.last
+## Arrays
+
+```
+> a = ["yankee", "hotel", "foxtrot"]
+```
+
 - map/collect
 - class syntax, constructors
 
