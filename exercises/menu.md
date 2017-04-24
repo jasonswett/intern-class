@@ -1,8 +1,8 @@
 # Menu
 
-arrays, .first/.last
-map/collect
-class syntax, constructors
+- arrays, .first/.last
+- map/collect
+- class syntax, constructors
 
 ```
 Hamburger.....$5.00
