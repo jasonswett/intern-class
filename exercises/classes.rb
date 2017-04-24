@@ -1,10 +1,7 @@
-class Business
-  attr_accessor :name
+class MenuItem
+  attr_accessor :name, :price
 
-  def initialize(name)
-    @name = name
+  def to_s
+    "#{name} $#{price}"
   end
-end
-
-class Restaurant < Business
 end
