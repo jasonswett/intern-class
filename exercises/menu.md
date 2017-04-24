@@ -2,8 +2,9 @@
 
 ## Arrays
 
-- arrays, .first, .last
+- arrays, .first, .last, <<
 - map/collect
+- sort_by
 - class syntax, constructors
 
 ```
