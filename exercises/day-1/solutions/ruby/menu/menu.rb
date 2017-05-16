@@ -7,12 +7,12 @@ class Menu
     @menu_items << MenuItem.new(name, price)
   end
 
-  def menu_item_names
+  def sorted_menu_item_names
     @menu_items.collect(&:name).sort_by(&:length)
   end
 
   def longest_menu_item_name
-    menu_item_names.last
+    sorted_menu_item_names.last
   end
 
   def to_s
